@@ -3,6 +3,11 @@
 - [Dsquery](https://learn.microsoft.com/en-us/archive/technet-wiki/2195.active-directory-dsquery-commands![image](https://github.com/user-attachments/assets/86948d9e-a4eb-4904-989e-d72adc26b28e)
 )
 
+####
+Get All Properties
+```powershell
+dsquery * "CN=Biswas, Biswajit,OU=Users,DC=americas,DC=contoso,DC=com" -scope base -attire *
+```
 #### Find out Account Expiry Date
 ```powershell
 dsquery user -name * -limit 0 | dsget user -samid -acctexpires
